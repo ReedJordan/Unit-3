@@ -50,13 +50,25 @@ public class Main {
         //For Homework
 
         // 1) Create a random number in the range [m,n]
-
+        // m = 4, n = 11
+        double hw1 = (Math.random() * 7) + 4;
+        System.out.println(hw1);
+        
+        
         // 2) Create a random negative integer in the range [-m,0]
-
+        // m = -4
+        double hw2 = (int) (Math.random() * (-4));
+        System.out.println(hw2);
+        
         // 3) Create a random negative integer in the range [-m,-n]
-
+        // m = -7, n = -3
+        double hw3 = (int) ((Math.random() * (-4)) - 3);
+        System.out.println(hw3);
+        
         // 4) Create a random negative integer in the range [-m,n]
-
+        // m = -7, n = 2
+        double hw4 = (int) ((Math.random() * (-9)) + 2);
+        System.out.println(hw4);
 
 
 
