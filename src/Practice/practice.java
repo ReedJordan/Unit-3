@@ -7,7 +7,7 @@ public class practice {
         //problemOne()
         //problemTwo()
     }
-
+//do I have to put something in
     public static void problemOne(){
         // code here
     }
