@@ -14,9 +14,7 @@ public class practice{
     public static void main(String[] args){
         //remove the // to run the methods
 
-        problemOne();
-        
-        
+        //problemOne();
         //problemTwo()
         
         
@@ -30,57 +28,58 @@ public class practice{
         int firstNum = input.nextInt();
         int secondNum = input.nextInt();
         int thirdNum = input.nextInt();
-        String highest = null;
-        String middle = null;
-        String lowest = null;
-        
-        
+        int highest = 0;
+        int middle = 0;
+        int lowest = 0;
         
         if (firstNum > secondNum && secondNum > thirdNum){
             
-            String highest = firstNum + ", ";
-            String middle = secondNum + ", ";
-            String lowest = thirdNum + ", ";
+            highest = firstNum;
+            middle = secondNum;
+            lowest = thirdNum;
 
-        }else if (firstNum > thirdNum && thirdNum > secondNum){
+        }
+        else if (firstNum > thirdNum && thirdNum > secondNum){
             
-            String highest = firstNum + ", ";
-            String middle = thirdNum + ", ";
-            String lowest = secondNum + ", ";
+            highest = firstNum;
+            middle = thirdNum;
+            lowest = secondNum;
 
         }else if (secondNum > firstNum && firstNum > thirdNum){
             
-            String highest = secondNum + ", ";
-            String middle = firstNum + ", ";
-            String lowest = thirdNum + ", ";
+            highest = secondNum;
+            middle = firstNum;
+            lowest = thirdNum;
 
         }else if (secondNum > thirdNum && thirdNum > firstNum){
             
-            String highest = secondNum + ", ";
-            String middle = thirdNum + ", ";
-            String lowest = firstNum + ", ";
+            highest = secondNum;
+            middle = thirdNum;
+            lowest = firstNum;
 
         }else if (thirdNum > firstNum && firstNum > secondNum){
             
-            String highest = thirdNum + ", ";
-            String middle = firstNum + ", ";
-            String lowest = secondNum + ", ";
+            highest = thirdNum;
+            middle = firstNum;
+            lowest = secondNum;
 
         }else if (thirdNum > secondNum && secondNum > firstNum){
             
-            String highest = thirdNum + ", ";
-            String middle = secondNum + ", ";
-            String lowest = firstNum + ", ";
+            highest = thirdNum;
+            middle = secondNum;
+            lowest = firstNum;
             
         }
         
-        System.out.println("\nLowest to highest: "+ lowest + middle + highest);
-        System.out.println("Highest to lowest: "+ highest+ middle+ lowest);
-        
+        System.out.println("Lowest to highest: "+ lowest +", "+ middle +", "+ highest);
+        System.out.println("Highest to lowest: "+ highest +", "+ middle +", "+ lowest);
+        System.out.println(" ");
         
     }
 
     public static void problemTwo(){
-        //code here
+        
+        
+        
     }
 }
