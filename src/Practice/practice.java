@@ -77,7 +77,28 @@ public class practice{
         
     }
 
-    public static void problemTwo(){
+   public static void problemTwo(){
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("How many hours did you work this week?");
+        double totHours = input.nextDouble();
+        System.out.println("What is your hourly wage?");
+        double wages = input.nextDouble();
+        //System.out.printf("%.2f", 12.35 * 1.5);
+        double overHours = 0;
+        double regHours = 0;
+        
+        if (totHours > 40){
+            overHours = totHours - 40;
+            regHours = 40;
+        }else{
+            overHours = 0;
+            regHours = totHours;
+        }
+        
+        double regPay = wages * regHours;
+        double overPay = 1.5 * wages * overHours;
+        System.out.printf("Your earned %.2f from regular pay and %.2f from overtime pay.", regPay, overPay);
         
         
         
